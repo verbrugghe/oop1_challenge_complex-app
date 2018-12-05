@@ -52,6 +52,12 @@ Your class should adhere to the following UML model:
 #################################################
 ```
 
-It has a main with some demo code and a battery of unit tests to test your implementation.
+Format the real and imaginary component in the `toString` method to a fixed number of digits using the following code snippet: `String fixed = String.format("%1$,.2f", 88.1234567);`. Use this only inside of the `toString()` method.
+
+So `System.out.println(String.format("%1$,.2f", 88.1234567));` would result in `88.12`.
+
+### Repo
+
+The maven project inside this repo has a main with some demo code and a battery of unit tests to test your implementation.
 
 Make sure to fork the project first to your own account. That way you have your own personal copy. Next you can clone it and hack at it.
