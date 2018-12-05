@@ -69,4 +69,29 @@ public class ComplexTest {
 
     assertEquals("0.32 - 55.13j", number.toString());
   }
+
+  @Test
+  public void testAddAnotherComplex() {
+    Complex first = new Complex(0.32, 55.13);
+    Complex second = new Complex(-134.33, 12.01);
+
+    Complex result = first.add(second);
+
+    assertEquals(first.getReal()+second.getReal(), result.getReal(), delta);
+    // assertEquals(first.getImaginary()+second.getImaginary(), result.getImaginary(), delta);
+  }
+
+  @Test
+  public void testAddShouldNotChangeOriginalObjects() {
+    Complex first = new Complex(0.32, 55.13);
+    String firstString = first.toString();
+
+    Complex second = new Complex(-134.33, 12.01);
+    String secondString = second.toString();
+
+    Complex result = first.add(second);
+
+    assertEquals(firstString, first.toString());
+    assertEquals(secondString, second.toString());
+  }
 }
