@@ -53,3 +53,5 @@ Your class should adhere to the following UML model:
 ```
 
 It has a main with some demo code and a battery of unit tests to test your implementation.
+
+Make sure to fork the project first to your own account. That way you have your own personal copy. Next you can clone it and hack at it.
