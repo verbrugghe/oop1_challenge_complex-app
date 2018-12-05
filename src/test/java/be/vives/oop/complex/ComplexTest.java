@@ -94,4 +94,28 @@ public class ComplexTest {
     assertEquals(firstString, first.toString());
     assertEquals(secondString, second.toString());
   }
+
+  @Test
+  public void testCopyConstructor() {
+    double real = -19.43;
+    double imaginary = 231.32;
+    Complex number = new Complex(real, imaginary);
+    Complex copy = new Complex(number);
+
+    assertFalse(number == copy);
+  }
+
+  @Test
+  public void testCopyShouldNotBeinfluencedByChangesInOriginal() {
+    double real = -19.43;
+    double imaginary = 231.32;
+    Complex number = new Complex(real, imaginary);
+    Complex copy = new Complex(number);
+
+    number.setReal(-real);
+    number.setImaginary(-imaginary);
+
+    assertEquals(real, copy.getReal(), delta);
+    assertEquals(imaginary, copy.getImaginary(), delta);
+  }
 }
