@@ -38,4 +38,14 @@ public class ComplexTest {
 
     assertEquals(value, number.getImaginary(), delta);
   }
+
+  @Test
+  public void testInitializationConstructor() {
+    double real = -19.43;
+    double imaginary = 231.32;
+    Complex number = new Complex(real, imaginary);
+
+    assertEquals(real, number.getReal(), delta);
+    assertEquals(imaginary, number.getImaginary(), delta);
+  }
 }
