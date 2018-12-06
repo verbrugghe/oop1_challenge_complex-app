@@ -24,14 +24,14 @@ public final class App {
       Complex sum = base.add(number);
       System.out.println(base + " + " + number + " = " + sum);
 
-      Complex difference = base.subtract(number);
-      System.out.println(base + " - " + number + " = " + difference);
+     Complex difference = base.subtract(number);
+     System.out.println(base + " - " + number + " = " + difference);
 
       Complex product = base.multiply(number);
       System.out.println(base + " . " + number + " = " + product);
 
-      double factor = 10;
-      Complex dividedByFactor = base.divide(factor);
-      System.out.println(base + " / " + factor + " = " + dividedByFactor);
+//      double factor = 10;
+//      Complex dividedByFactor = base.divide(factor);
+//      System.out.println(base + " / " + factor + " = " + dividedByFactor);
     }
 }
