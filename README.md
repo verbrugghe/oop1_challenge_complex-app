@@ -12,7 +12,7 @@ Model your class so the following requirements are met:
 
 * [ ] Add getters and setters for the imaginary and real parts
 * [ ] Add a constructor which allows a Complex number to be created initialized with a real and imaginary number
-* [ ] Add a toString method which return the complex number in the format `"a + bj"`
+* [ ] Add a toString method which return the complex number in the format `"(a + bj)"`. Make sure to also add the parentheses.
 * [ ] Add a method that can add two complex numbers and return the result as a new object
 * [ ] Add a copy constructor which allows the user to create copies of an already existing instance
 * [ ] Add a method that can subtract a complex number from another and return the result as a new object
