@@ -20,7 +20,7 @@ Model your class so the following requirements are met:
 * [ ] Add a method that can divide the complex number by a real factor, returning the result as a new object
 * [ ] Add a method that can multiply two complex numbers and return the result as a new object. Search online if you need some info on how to multiply two complex numbers.
 * [ ] Add a method that can divide two complex numbers and return the result as a new object. Search online if you need some info on how to divide two complex numbers.
-* [ ] Add tests to the maven project found below to test your implementation of subtract, multiply (both with factor and other complex number) and divide (both with factor and other complex number). Create your test before you add the implementation to the Complex class.
+* [ ] Add tests to the maven project found below to test your implementation of subtract, multiply (with factor) and divide (with other complex number). Create your test before you add the implementation to the Complex class.
 
 Your class should adhere to the following UML model:
 
