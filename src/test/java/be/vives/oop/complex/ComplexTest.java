@@ -78,7 +78,7 @@ public class ComplexTest {
     Complex result = first.add(second);
 
     assertEquals(first.getReal()+second.getReal(), result.getReal(), delta);
-    // assertEquals(first.getImaginary()+second.getImaginary(), result.getImaginary(), delta);
+    assertEquals(first.getImaginary()+second.getImaginary(), result.getImaginary(), delta);
   }
 
   @Test
