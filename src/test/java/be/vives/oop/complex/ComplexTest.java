@@ -118,4 +118,15 @@ public class ComplexTest {
     assertEquals(real, copy.getReal(), delta);
     assertEquals(imaginary, copy.getImaginary(), delta);
   }
+
+  @Test
+  public void testMultiplyAnotherComplex() {
+    Complex first = new Complex(3, 2);
+    Complex second = new Complex(1, 7);
+
+    Complex result = first.multiply(second);
+
+    assertEquals(-11, result.getReal(), delta);
+    assertEquals(23, result.getImaginary(), delta);
+  }
 }
